@@ -123,12 +123,15 @@ public class Board extends JPanel implements ActionListener {
     private void gameOver(Graphics g) {
 
         String msg = "Game Over";
+        int score = (dots-3)*100;
+        String scoremsg = "\nScore: "+ Integer.toString(score);
         Font small = new Font("Helvetica", Font.BOLD, 14);
         FontMetrics metr = getFontMetrics(small);
 
         g.setColor(Color.white);
         g.setFont(small);
-        g.drawString(msg, (B_WIDTH - metr.stringWidth(msg)) / 2, B_HEIGHT / 2);
+        g.drawString(msg, (B_WIDTH - metr.stringWidth(msg)) / 2, (B_HEIGHT / 2)-10);
+        g.drawString(scoremsg, (B_WIDTH - metr.stringWidth(scoremsg)) / 2,(B_HEIGHT / 2)+10 );
     }
 
     private void checkApple() {
