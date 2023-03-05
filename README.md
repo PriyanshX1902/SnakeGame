@@ -1,5 +1,5 @@
 <h1>Snake Game in JAVA</h1>
-This is a simple Snake game built using Java swing GUI library. Features include snake's moving, eating food, displaying score and control snake by arrow keys.
+Snake game built using Java and GUI made by using Java swing library. A user can provide directions to the snake using arrow keys and make it eat food. Also if the snake collides with the border or body, the game gets over and score gets displayed to the user.
 
 <br>
 
